@@ -72,6 +72,15 @@
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
+/* Set the colors */
+:root {
+    --orange: #DD8E58;
+    --blue-gray: #708A81;
+    --light-tan: #E5D1B8;
+    --brown: #C2956E;
+    --dark-purple: #2B2129;
+}
+
 html, body {
   padding: 0;
   margin: 0;
