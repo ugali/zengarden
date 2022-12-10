@@ -17,6 +17,7 @@
   --brown: #C2956E;
   --dark-purple: #2B2129;
   --main-background-color:#E5D1B8;
+  --head-color:#58ddd0;
 }
 *, *::after, *::backdrop{
 	margin: 0;
@@ -29,11 +30,12 @@ html {
 	padding: 0;
 	}
 body { 
-	font: 76% Helvetica, sans-serif;
+	font: 92% Helvetica, sans-serif;
 	line-height: 1.88889;
 	background: var(--main-background-color);
 	margin: 0; 
 	padding: 0;
+	color:#3f70ad;
 	}
 p { 
 	margin-top: 0; 
@@ -43,12 +45,15 @@ h3 {
 	font: normal 2.4em garamond, serif;
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
-	color: var(--blue-gray);
+	color: var(--head-color);
+	font-weight: 900;
 	}
+.main h3 {
+	color:#2b2129;
+}
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: var(--light-tan)
 	}
 a:visited { 
 	font-weight: bold; 
@@ -66,26 +71,28 @@ abbr {
 
 /* specific divs */
 .page-wrapper { 
-	background: url(/images/color-pallete-transparent-butterfly.png) no-repeat 400px 190px;
+	background: url(/images/color-pallete-TBF-small.png) no-repeat center 1270px;
 	position: relative;
-    height: 1400px;
+    height: 1600px;
 	}
 
-.intro { 
-	min-width: 470px;
-	width: 100%;
+
+#zen-preamble {
+	padding: 20px;
+	background-color: #dd5865;
+	color:#58ddd0;
 	}
 	
 .intro header {
-		padding: 20px;
-		background: transparent url(/images/color-pallete-extra-small.png) no-repeat top left;
-		background-color: #eaba99;
+	padding: 20px;
+	background: transparent url(/images/color-pallete-extra-small.png) no-repeat top left;
+	background-color: #eaba99;
 	}
 header h1 { 
 	margin: 0 auto;
 	display: block;
 	text-align: center;
-	font-size: 46px;
+	font-size: 4rem;
 	color:#58a7dd;
 	}
 header h2 { 
@@ -105,7 +112,7 @@ div.main {
 .summary {
 	clear: both; 
 	margin: 20px 20px 20px 10px; 
-	width: 160px; 
+	max-width: 200px; 
 	float: left;
 	background-color: #5865dd;
 	color:#ddd058;
@@ -116,21 +123,19 @@ div.main {
 	font: italic 1.1em/2.2 georgia; 
 	text-align: center;
 	}
-
-.preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
-	}
-
+	
 
 footer { 
 	text-align: center; 
 	background-color: #708A81;
 	padding: 20px;
-	position:relative;
+	position:absolute;
 	left:0;
-	top:500px;
+	bottom:0px;
 	margin:0;
+	min-width: 100%;
+	color: #dd8e58;
+	font-size: 1.5rem;
 	}
 footer a:link, footer a:visited { 
 	margin-right: 20px; 
@@ -139,14 +144,14 @@ footer a:link, footer a:visited {
 .sidebar {
 	margin-left: 600px; 
 	position: absolute;
-    top:160px;
+    top:393px;
 	right: 0;
 	background-color: #2b2129;
 	}
 .sidebar .wrapper { 
 	font: 10px verdana, sans-serif; 
 	padding: 10px; 
-	width: 130px; 
+	width: 180px; 
 	}
 .sidebar h3.select { 
 	margin: 10px 0 5px 0; 
